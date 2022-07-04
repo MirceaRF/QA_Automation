@@ -1,7 +1,7 @@
 '''
 1. Creează-ți cont de github și încarcă într-un repo nou tot ce am facut până
 acum la ore.
-Curs git/github https://bit.ly/3yfFvqL
+Curs git/github 
 VIDEOS 1, 2 si 3
 2. Rezolvă exercițiul după ce ai urcat proiectul (tot ce am facut până acum
 împreună).
@@ -158,5 +158,5 @@ Eu nu am colturi
 3. Actualizează proiectul pe github facand un push la noul cod
 În Foldereul de teme ajunge să pui doar linkul cu proiectul tău public
 Curs git/github
-
+https://github.com/MirceaRF/QA_Automation/edit/main/intro_IT/Tema_Curs_7.py
 '''

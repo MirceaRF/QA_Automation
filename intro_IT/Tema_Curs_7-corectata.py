@@ -148,5 +148,5 @@ c1.descrie()
 3. Actualizează proiectul pe github facand un push la noul cod
 În Foldereul de teme ajunge să pui doar linkul cu proiectul tău public
 Curs git/github
-
+https://github.com/MirceaRF/QA_Automation/blob/main/intro_IT/Tema_Curs_7-corectata.py
 '''

@@ -127,6 +127,7 @@ lista_taguri[0].send_keys('Floroaie')
 lista_taguri[1].send_keys('Mircea')
 lista_taguri[2].send_keys('Tester')
 lista_taguri[3].click()
+lista_taguri[4].click()
 print(len(lista_taguri))
 
 sleep(3)
@@ -197,4 +198,52 @@ sleep(3)
 chrome.find_element(By.XPATH, '//input[@id="job-title"]').send_keys("Tester")
 sleep(3)
 
-#● 3 după textul de pe element
+#-------------------------------------
+#------------● 3 după textul de pe element
+
+# # selector by Xpath - in f de textul vizibil
+chrome.find_element(By.XPATH, '//a[text()="Submit"]').click()
+
+chrome.get('http://automationpractice.com/index.php')
+#<a data-toggle="tab" href="#homefeatured" class="homefeatured">Popular</a>
+chrome.find_element(By.XPATH, '//a[text()="Popular"]').click()
+sleep(2)
+#<a href="http://automationpractice.com/index.php?controller=contact" title="Contact Us">Contact us</a>
+chrome.find_element(By.XPATH, '//a[text()="Contact us"]').click()
+sleep(2)
+#<a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category" title="Women" class="">Women</a>
+chrome.find_element(By.XPATH, '//a[text()="Women"]').click()
+sleep(2)
+
+#-------------------------------------
+#----------● 1 după parțial text
+
+
+
+
+#-------------------------------------
+#------------● 1 cu SAU, folosind pipe |
+
+#//*[@id="layered_id_attribute_group_1"]
+#//*[@id="layered_id_attribute_group_2"]
+#<a href="http://automationpractice.com/index.php?id_category=3&amp;controller=category#">M<span> (7)</span></a>
+# # selector by Xpath - OR primul gasit dintre variante  ->  | = sau
+s = chrome.find_element(By.XPATH, '//*[@id="layered_id_attribute_group_1"] | //*[@id="layered_id_attribute_group_2"]')
+
+sleep(3)
+s.click()
+sleep(2)
+
+
+#-------------------------------------
+#------------● 1 cu *
+
+# selector by Xpath - * toate elementele care resecta regula
+#  * inseamna un inlocuitor pentru toate elementele care respecta regula
+
+#//*[@id="search_query_top"]
+chrome.find_element(By.XPATH, '//*[@id="search_query_top"]').send_keys('regula')
+sleep(2)
+
+#-----------------
+#---● 1 în care le iei ca pe o listă de xpath și în python ajunge 1 element, deci cu (xpath)[1]

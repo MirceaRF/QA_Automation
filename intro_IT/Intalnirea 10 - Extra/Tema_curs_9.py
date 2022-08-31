@@ -101,7 +101,7 @@ class Login(unittest.TestCase):
 
 
 #Test_1 - Verifică dacă noul url e corect
-    @unittest.skip
+    #@unittest.skip
     def test_url(self):
         self.chrome.implicitly_wait(10)
         actual = self.chrome.current_url

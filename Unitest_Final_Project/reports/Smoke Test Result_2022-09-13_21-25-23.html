@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TestReport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">TestReport</h2>
+                <p class='attribute'><strong>Start Time: </strong>2022-09-13 21:25:23</p>
+                <p class='attribute'><strong>Duration: </strong>38.83 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 5, Pass: 2
+                    
+                    , Error: 3
+                    
+                    
+                    
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>login_test.Login</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_navigate_credentiale_corecte</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:45px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_navigate_credentiale_gresite</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:45px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_verificare_mesaj_eroare</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:45px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h3"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\pt curs\github\Unitest_Final_Project\login_test.py", line 36, in test_verificare_mesaj_eroare
+    error = self.chrome.find_element(*self.ERROR_MESSAGE)
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 855, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//h3"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 2
+                                
+                                , Error: 1
+                                
+                                
+                                
+                                -- Duration: 25.17 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>product.Product</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_add_to_cart</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:45px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\pt curs\github\Unitest_Final_Project\product.py", line 28, in test_add_to_cart
+    self.chrome.find_element(*self.BACKPACK).click()
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 855, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@id='add-to-cart-sauce-labs-backpack']"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0
+                                
+                                , Error: 1
+                                
+                                
+                                
+                                -- Duration: 6.78 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>cart.Cart</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_checkout</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:45px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='checkout']"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "D:\pt curs\github\Unitest_Final_Project\cart.py", line 27, in test_checkout
+    self.chrome.find_element(*self.CHECKOUT).click()
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 855, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\mirce\AppData\Local\Programs\Python\Python310\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 243, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id='checkout']"}
+  (Session info: chrome=105.0.5195.102)
+Stacktrace:
+Backtrace:
+	Ordinal0 [0x00E9DF13+2219795]
+	Ordinal0 [0x00E32841+1779777]
+	Ordinal0 [0x00D4423D+803389]
+	Ordinal0 [0x00D73025+995365]
+	Ordinal0 [0x00D731EB+995819]
+	Ordinal0 [0x00DA0F52+1183570]
+	Ordinal0 [0x00D8E844+1108036]
+	Ordinal0 [0x00D9F192+1175954]
+	Ordinal0 [0x00D8E616+1107478]
+	Ordinal0 [0x00D67F89+950153]
+	Ordinal0 [0x00D68F56+954198]
+	GetHandleVerifier [0x01192CB2+3040210]
+	GetHandleVerifier [0x01182BB4+2974420]
+	GetHandleVerifier [0x00F36A0A+565546]
+	GetHandleVerifier [0x00F35680+560544]
+	Ordinal0 [0x00E39A5C+1808988]
+	Ordinal0 [0x00E3E3A8+1827752]
+	Ordinal0 [0x00E3E495+1827989]
+	Ordinal0 [0x00E480A4+1867940]
+	BaseThreadInitThunk [0x774DFA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77697A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77697A6E+238]
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 1, Pass: 0
+                                
+                                , Error: 1
+                                
+                                
+                                
+                                -- Duration: 6.88 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

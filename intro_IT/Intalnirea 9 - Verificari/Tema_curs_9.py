@@ -101,7 +101,7 @@ class Login(unittest.TestCase):
 
 
 #Test_1 - Verifică dacă noul url e corect
-    @unittest.skip
+   # @unittest.skip
     def test_url(self):
         self.chrome.implicitly_wait(10)
         actual = self.chrome.current_url
@@ -237,7 +237,7 @@ class Login(unittest.TestCase):
 #- La final testul trebuie să îmi printeze fie
 #‘Nu am reușit să găsesc parola’
 #‘Parola secretă este [parola]’
-
+    @unittest.skip
     def test_brute_force_password_hacking(self):
         first_url, last_url, the_brute_force_password = '   '
         possible_passwords = ['Enter', 'tomsmith', 'for', 'the', 'username', 'and', 'SuperSecretPassword!', 'for',

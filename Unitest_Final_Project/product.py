@@ -41,7 +41,7 @@ class Product(unittest.TestCase):
         sleep(3)
 
     def test_list(self):
-        self.chrome.find_element(*self.LIST_AZ).click()
+        self.chrome.find_element(*self.LIST_AZ).click()   #ordonare lista A-Z
         sleep(3)
-        self.chrome.find_element(*self.LIST_LOHI).click()
+        self.chrome.find_element(*self.LIST_LOHI).click()  # pret lo-hi
         sleep(3)
